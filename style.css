@@ -1,8 +1,55 @@
-h1, h2 {
+h1,
+h2 {
   font-family: Lato;
   text-align: center;
 }
 
 html {
-  background: url(https://i.imgur.com/b9r5sEL.jpg) bottom center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+body::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  color: black;
+  background: linear-gradient(
+      180deg,
+      rgba(4, 4, 97, 0.8),
+      rgb(180, 165, 165, 0.5) 20%
+    ),
+    url(https://i.pinimg.com/originals/70/7a/40/707a40fc3b669a174755bbfe3b325132.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.playing {
+  border: white 2px solid !important;
+  box-shadow: 5px 5px 15px 5px white !important;
+  color: white;
+  font-weight: 1500;
+}
+
+.drum {
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
+}
+
+.key {
+  display: flex;
+  flex-flow: column;
+  box-shadow: 5px 5px 15px 5px black;
+  border: black 2px solid;
+  width: 50%;
+  text-align: center;
+  padding: 2%;
+  border-radius: 5px;
+  margin: 5px;
 }
